@@ -1,0 +1,88 @@
+{
+  "chatRooms": [
+    {
+      "Id": 1,
+      "name": "Mercedes-Benz Enthusiasts",
+      "topic": "Discussing the latest Mercedes-Benz models, AMG performance, and luxury features",
+      "participantCount": 1247,
+      "lastActivity": "2024-01-15T10:30:00Z"
+    },
+    {
+      "Id": 2,
+      "name": "BMW M Power",
+      "topic": "All things BMW M - from M2 to M8, track days, and performance modifications",
+      "participantCount": 892,
+      "lastActivity": "2024-01-15T09:45:00Z"
+    },
+    {
+      "Id": 3,
+      "name": "Porsche 911 Club",
+      "topic": "The iconic 911 in all its variants - from Carrera to Turbo S, classic to modern",
+      "participantCount": 756,
+      "lastActivity": "2024-01-15T11:20:00Z"
+    },
+    {
+      "Id": 4,
+      "name": "Ferrari Owners",
+      "topic": "Exclusive community for Ferrari owners and enthusiasts - sharing experiences and passion",
+      "participantCount": 634,
+      "lastActivity": "2024-01-15T08:15:00Z"
+    },
+    {
+      "Id": 5,
+      "name": "Lamborghini Talk",
+      "topic": "Italian bulls discussion - Huracán, Aventador, and the latest from Sant'Agata",
+      "participantCount": 523,
+      "lastActivity": "2024-01-15T12:00:00Z"
+    },
+    {
+      "Id": 6,
+      "name": "McLaren Supercar Chat",
+      "topic": "British precision engineering - discussing McLaren's latest supercars and technology",
+      "participantCount": 445,
+      "lastActivity": "2024-01-15T07:30:00Z"
+    },
+    {
+      "Id": 7,
+      "name": "Audi RS Performance",
+      "topic": "RS models from Audi - discussing quattro performance and the latest innovations",
+      "participantCount": 698,
+      "lastActivity": "2024-01-15T10:45:00Z"
+    },
+    {
+      "Id": 8,
+      "name": "Electric Supercars",
+      "topic": "The future is electric - discussing Tesla, Lucid, Rimac, and electric performance",
+      "participantCount": 1123,
+      "lastActivity": "2024-01-15T11:30:00Z"
+    },
+    {
+      "Id": 9,
+      "name": "Classic Car Restoration",
+      "topic": "Bringing classics back to life - restoration tips, parts sourcing, and showcase",
+      "participantCount": 834,
+      "lastActivity": "2024-01-15T09:20:00Z"
+    },
+    {
+      "Id": 10,
+      "name": "Track Day Warriors",
+      "topic": "Track day experiences, lap times, circuit reviews, and performance driving tips",
+      "participantCount": 967,
+      "lastActivity": "2024-01-15T10:15:00Z"
+    },
+    {
+      "Id": 11,
+      "name": "Luxury SUV Discussion",
+      "topic": "Premium SUVs - from Bentley Bentayga to Rolls-Royce Cullinan and beyond",
+      "participantCount": 412,
+      "lastActivity": "2024-01-15T08:45:00Z"
+    },
+    {
+      "Id": 12,
+      "name": "Car Photography",
+      "topic": "Capturing automotive beauty - sharing photos, techniques, and locations",
+      "participantCount": 589,
+      "lastActivity": "2024-01-15T11:50:00Z"
+    }
+  ]
+}

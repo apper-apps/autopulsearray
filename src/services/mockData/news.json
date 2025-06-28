@@ -1,0 +1,114 @@
+{
+  "news": [
+    {
+      "Id": 1,
+      "title": "Mercedes-AMG Unveils Revolutionary Hybrid Powertrain for 2025",
+      "excerpt": "Mercedes-AMG announces groundbreaking E PERFORMANCE technology that combines their legendary V8 with electric motors for unprecedented performance and efficiency.",
+      "content": "Full article content here...",
+      "category": "launches",
+      "author": "Sarah Mitchell",
+      "publishedAt": "2024-01-15T08:00:00Z",
+      "readingTime": 5,
+      "imageUrl": "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80"
+    },
+    {
+      "Id": 2,
+      "title": "BMW M Division Teases Next-Generation M3 with Electric Assistance",
+      "excerpt": "Spy shots reveal BMW's most iconic M car is getting electrified while maintaining its driver-focused DNA.",
+      "content": "Full article content here...",
+      "category": "industry",
+      "author": "Marcus Johnson",
+      "publishedAt": "2024-01-14T14:30:00Z",
+      "readingTime": 4,
+      "imageUrl": "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80"
+    },
+    {
+      "Id": 3,
+      "title": "Porsche 911 Turbo S Review: The Ultimate Daily Driver Supercar",
+      "excerpt": "We spend a week with Porsche's flagship 911 to discover if it truly can be both a track weapon and daily companion.",
+      "content": "Full article content here...",
+      "category": "reviews",
+      "author": "David Chen",
+      "publishedAt": "2024-01-13T10:15:00Z",
+      "readingTime": 8,
+      "imageUrl": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80"
+    },
+    {
+      "Id": 4,
+      "title": "Ferrari's Bold Electric Future: SF90 Successor to Feature Solid-State Batteries",
+      "excerpt": "Maranello's next hybrid hypercar promises even more performance with revolutionary battery technology.",
+      "content": "Full article content here...",
+      "category": "technology",
+      "author": "Isabella Romano",
+      "publishedAt": "2024-01-12T16:45:00Z",
+      "readingTime": 6,
+      "imageUrl": "https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=800&q=80"
+    },
+    {
+      "Id": 5,
+      "title": "Lamborghini Huracán Successor Spotted: V10 Lives On",
+      "excerpt": "Despite industry electrification trends, Lamborghini commits to keeping the naturally aspirated V10 alive in their next-generation supercar.",
+      "content": "Full article content here...",
+      "category": "launches",
+      "author": "Antonio Rossi",
+      "publishedAt": "2024-01-11T12:20:00Z",
+      "readingTime": 5,
+      "imageUrl": "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80"
+    },
+    {
+      "Id": 6,
+      "title": "McLaren Artura First Drive: British Engineering Perfection",
+      "excerpt": "McLaren's first series-production hybrid delivers on its promise of combining McLaren DNA with electrified efficiency.",
+      "content": "Full article content here...",
+      "category": "reviews",
+      "author": "James Thompson",
+      "publishedAt": "2024-01-10T09:30:00Z",
+      "readingTime": 7,
+      "imageUrl": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80"
+    },
+    {
+      "Id": 7,
+      "title": "Audi e-tron GT Sales Surge as Electric Performance Gains Acceptance",
+      "excerpt": "Luxury electric vehicles are finding their audience as charging infrastructure improves and performance matches expectations.",
+      "content": "Full article content here...",
+      "category": "industry",
+      "author": "Emma Wagner",
+      "publishedAt": "2024-01-09T11:45:00Z",
+      "readingTime": 4,
+      "imageUrl": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80"
+    },
+    {
+      "Id": 8,
+      "title": "Bentley Continental GT Speed: The Art of Grand Touring Refined",
+      "excerpt": "Bentley's flagship coupe receives updates that enhance both luxury and performance for the discerning driver.",
+      "content": "Full article content here...",
+      "category": "reviews",
+      "author": "Charlotte Windsor",
+      "publishedAt": "2024-01-08T15:20:00Z",
+      "readingTime": 6,
+      "imageUrl": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&q=80"
+    },
+    {
+      "Id": 9,
+      "title": "Revolutionary Carbon Fiber Manufacturing Reduces Supercar Production Costs",
+      "excerpt": "New manufacturing techniques promise to make carbon fiber more accessible, potentially transforming the automotive industry.",
+      "content": "Full article content here...",
+      "category": "technology",
+      "author": "Dr. Kevin Park",
+      "publishedAt": "2024-01-07T13:10:00Z",
+      "readingTime": 5,
+      "imageUrl": "https://images.unsplash.com/photo-1572033045637-e5b3dd5f7e8e?w=800&q=80"
+    },
+    {
+      "Id": 10,
+      "title": "Rolls-Royce Announces Bespoke Electric Luxury Sedan for 2026",
+      "excerpt": "The ultimate luxury brand prepares for full electrification while maintaining their commitment to unparalleled craftsmanship.",
+      "content": "Full article content here...",
+      "category": "launches",
+      "author": "Victoria Sterling",
+      "publishedAt": "2024-01-06T10:00:00Z",
+      "readingTime": 4,
+      "imageUrl": "https://images.unsplash.com/photo-1631295868223-63265b40d9e4?w=800&q=80"
+    }
+  ]
+}

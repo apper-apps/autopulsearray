@@ -1,0 +1,124 @@
+{
+  "messages": [
+    {
+      "Id": 1,
+      "userId": "user123",
+      "username": "SpeedDemon",
+      "content": "Just test drove the new AMG GT 63 S - absolutely incredible! The sound of that V8 is pure music.",
+      "timestamp": "2024-01-15T10:25:00Z",
+      "roomId": 1
+    },
+    {
+      "Id": 2,
+      "userId": "user456",
+      "username": "MercedesLover",
+      "content": "I've been waiting for a review on that! How's the interior compared to the previous generation?",
+      "timestamp": "2024-01-15T10:27:00Z",
+      "roomId": 1
+    },
+    {
+      "Id": 3,
+      "userId": "user123",
+      "username": "SpeedDemon",
+      "content": "The interior is on another level - the new MBUX system is so intuitive, and the build quality feels even more premium.",
+      "timestamp": "2024-01-15T10:29:00Z",
+      "roomId": 1
+    },
+    {
+      "Id": 4,
+      "userId": "user789",
+      "username": "BMWFanatic",
+      "content": "Anyone else excited about the new M2? Finally got my allocation sorted!",
+      "timestamp": "2024-01-15T09:40:00Z",
+      "roomId": 2
+    },
+    {
+      "Id": 5,
+      "userId": "user101",
+      "username": "TrackDay_Hero",
+      "content": "The M2 is going to be epic on track. That S58 engine is a beast!",
+      "timestamp": "2024-01-15T09:42:00Z",
+      "roomId": 2
+    },
+    {
+      "Id": 6,
+      "userId": "user234",
+      "username": "PorschePurist",
+      "content": "Nothing beats the naturally aspirated flat-six in the GT3. Just pure emotion!",
+      "timestamp": "2024-01-15T11:15:00Z",
+      "roomId": 3
+    },
+    {
+      "Id": 7,
+      "userId": "user567",
+      "username": "RedlineRacer",
+      "content": "Agreed! Though I have to say, the new Turbo S is incredibly fast. 0-60 in 2.6 seconds is just insane.",
+      "timestamp": "2024-01-15T11:18:00Z",
+      "roomId": 3
+    },
+    {
+      "Id": 8,
+      "userId": "user890",
+      "username": "FerrariPassion",
+      "content": "Just picked up my F8 Tributo yesterday. The delivery experience at the dealership was incredible!",
+      "timestamp": "2024-01-15T08:10:00Z",
+      "roomId": 4
+    },
+    {
+      "Id": 9,
+      "userId": "user345",
+      "username": "TifosiFan",
+      "content": "Congratulations! The F8 is such a beautiful machine. How does it compare to your previous Ferrari?",
+      "timestamp": "2024-01-15T08:12:00Z",
+      "roomId": 4
+    },
+    {
+      "Id": 10,
+      "userId": "user678",
+      "username": "LamboLover",
+      "content": "The Huracán EVO with the new aero package looks absolutely wild. Anyone seen one in person?",
+      "timestamp": "2024-01-15T11:55:00Z",
+      "roomId": 5
+    },
+    {
+      "Id": 11,
+      "userId": "user912",
+      "username": "McLarenMadness",
+      "content": "720S owner here - just hit 10k miles and this car still gives me goosebumps every time I start it up.",
+      "timestamp": "2024-01-15T07:25:00Z",
+      "roomId": 6
+    },
+    {
+      "Id": 12,
+      "userId": "user135",
+      "username": "ElectricFuture",
+      "content": "Tesla Model S Plaid vs Lucid Air Sapphire - has anyone driven both? Curious about the handling differences.",
+      "timestamp": "2024-01-15T11:25:00Z",
+      "roomId": 8
+    },
+    {
+      "Id": 13,
+      "userId": "user246",
+      "username": "VintageVroom",
+      "content": "Finally finished restoring my 1967 Porsche 911S. 3 years of work but so worth it!",
+      "timestamp": "2024-01-15T09:15:00Z",
+      "roomId": 9
+    },
+    {
+      "Id": 14,
+      "userId": "user357",
+      "username": "CircuitKing",
+      "content": "Silverstone track day next weekend - who's joining? Weather looks perfect for some fast laps!",
+      "timestamp": "2024-01-15T10:10:00Z",
+      "roomId": 10
+    },
+    {
+      "Id": 15,
+      "userId": "user468",
+      "username": "LuxurySUV",
+      "content": "The new Cullinan Black Badge is stunning. Rolls-Royce really knows how to make an SUV feel special.",
+      "timestamp": "2024-01-15T08:40:00Z",
+      "roomId": 11
+    }
+  ]
+}
