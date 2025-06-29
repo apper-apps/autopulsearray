@@ -207,7 +207,7 @@
         "weight": 6069
       }
     },
-    {
+{
       "Id": 10,
       "brand": "Aston Martin",
       "model": "DB12",
@@ -228,6 +228,236 @@
         "width": 76,
         "height": 50,
         "weight": 3957
+      }
+    },
+    {
+      "Id": 11,
+      "brand": "Bugatti",
+      "model": "Chiron",
+      "year": 2024,
+      "price": 3500000,
+      "imageUrl": "https://images.unsplash.com/photo-1544829099-b9a0c5303bea?w=800&q=80",
+      "description": "The Bugatti Chiron represents the absolute pinnacle of automotive engineering. With its quad-turbocharged W16 engine producing over 1,479 horsepower, this hypercar is as much a work of art as it is a feat of engineering, limited to just 500 examples worldwide.",
+      "specs": {
+        "category": "Hypercar",
+        "horsepower": 1479,
+        "acceleration": 2.4,
+        "mpg": 11,
+        "seating": 2,
+        "engineType": "8.0L W16 Quad-Turbo",
+        "transmission": "7-Speed Dual-Clutch",
+        "fuelType": "Gasoline",
+        "length": 175,
+        "width": 79,
+        "height": 47,
+        "weight": 4398
+      }
+    },
+    {
+      "Id": 12,
+      "brand": "Koenigsegg",
+      "model": "Jesko",
+      "year": 2024,
+      "price": 3200000,
+      "imageUrl": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+      "description": "The Koenigsegg Jesko pushes the boundaries of what's possible in a road-legal vehicle. With its revolutionary Light Speed Transmission and aerodynamic innovations, this Swedish masterpiece is designed to be the fastest Koenigsegg ever produced.",
+      "specs": {
+        "category": "Hypercar",
+        "horsepower": 1600,
+        "acceleration": 2.5,
+        "mpg": 12,
+        "seating": 2,
+        "engineType": "5.0L V8 Twin-Turbo",
+        "transmission": "9-Speed Light Speed",
+        "fuelType": "Gasoline",
+        "length": 181,
+        "width": 78,
+        "height": 47,
+        "weight": 3131
+      }
+    },
+    {
+      "Id": 13,
+      "brand": "Pagani",
+      "model": "Huayra",
+      "year": 2024,
+      "price": 2800000,
+      "imageUrl": "https://images.unsplash.com/photo-1563671604994-6cafe0d4d4cb?w=800&q=80",
+      "description": "The Pagani Huayra is automotive sculpture in motion. Each car is meticulously handcrafted in Italy with obsessive attention to detail, combining Mercedes-AMG powertrains with Pagani's artistic vision to create something truly extraordinary.",
+      "specs": {
+        "category": "Hypercar",
+        "horsepower": 764,
+        "acceleration": 3.2,
+        "mpg": 13,
+        "seating": 2,
+        "engineType": "6.0L V12 Twin-Turbo",
+        "transmission": "7-Speed Single-Clutch",
+        "fuelType": "Gasoline",
+        "length": 172,
+        "width": 80,
+        "height": 46,
+        "weight": 2976
+      }
+    },
+    {
+      "Id": 14,
+      "brand": "Tesla",
+      "model": "Model S Plaid",
+      "year": 2024,
+      "price": 135000,
+      "imageUrl": "https://images.unsplash.com/photo-1617104551722-3b2dccb6eb73?w=800&q=80",
+      "description": "The Tesla Model S Plaid redefines performance expectations for electric vehicles. With its tri-motor setup delivering instant torque and cutting-edge autonomous features, this sedan proves that the future of high-performance driving is electric.",
+      "specs": {
+        "category": "Electric Performance Sedan",
+        "horsepower": 1020,
+        "acceleration": 1.99,
+        "mpg": 120,
+        "seating": 5,
+        "engineType": "Tri-Motor Electric",
+        "transmission": "Single-Speed Direct",
+        "fuelType": "Electric",
+        "length": 196,
+        "width": 77,
+        "height": 56,
+        "weight": 4766
+      }
+    },
+    {
+      "Id": 15,
+      "brand": "Lexus",
+      "model": "LC 500",
+      "year": 2024,
+      "price": 105000,
+      "imageUrl": "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=800&q=80",
+      "description": "The Lexus LC 500 combines Japanese precision with emotional design. Its naturally aspirated V8 engine delivers a spine-tingling soundtrack while the impeccable build quality and luxury appointments create an unforgettable grand touring experience.",
+      "specs": {
+        "category": "Luxury GT Coupe",
+        "horsepower": 471,
+        "acceleration": 4.4,
+        "mpg": 19,
+        "seating": 4,
+        "engineType": "5.0L V8 Natural",
+        "transmission": "10-Speed Automatic",
+        "fuelType": "Gasoline",
+        "length": 185,
+        "width": 75,
+        "height": 53,
+        "weight": 4280
+      }
+    },
+    {
+      "Id": 16,
+      "brand": "Chevrolet",
+      "model": "Corvette Z06",
+      "year": 2024,
+      "price": 110000,
+      "imageUrl": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80",
+      "description": "The Chevrolet Corvette Z06 brings American supercar performance to a new level. With its flat-plane crank V8 and track-focused aerodynamics, this mid-engine marvel delivers exotic car performance at a fraction of the price.",
+      "specs": {
+        "category": "American Supercar",
+        "horsepower": 670,
+        "acceleration": 2.6,
+        "mpg": 16,
+        "seating": 2,
+        "engineType": "5.5L V8 Flat-Plane",
+        "transmission": "8-Speed Dual-Clutch",
+        "fuelType": "Gasoline",
+        "length": 185,
+        "width": 77,
+        "height": 48,
+        "weight": 3434
+      }
+    },
+    {
+      "Id": 17,
+      "brand": "Nissan",
+      "model": "GT-R NISMO",
+      "year": 2024,
+      "price": 215000,
+      "imageUrl": "https://images.unsplash.com/photo-1599971403907-9aa3bce7c91f?w=800&q=80",
+      "description": "The Nissan GT-R NISMO is Godzilla unleashed. This track-bred monster combines advanced AWD technology with aerodynamic perfection, creating a supercar that dominates both street and circuit with its relentless pursuit of performance.",
+      "specs": {
+        "category": "Japanese Supercar",
+        "horsepower": 600,
+        "acceleration": 2.5,
+        "mpg": 16,
+        "seating": 4,
+        "engineType": "3.8L V6 Twin-Turbo",
+        "transmission": "6-Speed Dual-Clutch",
+        "fuelType": "Gasoline",
+        "length": 185,
+        "width": 74,
+        "height": 54,
+        "weight": 3865
+      }
+    },
+    {
+      "Id": 18,
+      "brand": "Honda",
+      "model": "NSX Type S",
+      "year": 2024,
+      "price": 175000,
+      "imageUrl": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80",
+      "description": "The Honda NSX Type S represents the pinnacle of hybrid supercar technology. With its Sport Hybrid SH-AWD system and precision engineering, this Japanese masterpiece delivers supercar performance with everyday usability and legendary Honda reliability.",
+      "specs": {
+        "category": "Hybrid Supercar",
+        "horsepower": 600,
+        "acceleration": 2.9,
+        "mpg": 21,
+        "seating": 2,
+        "engineType": "3.5L V6 Hybrid",
+        "transmission": "9-Speed Dual-Clutch",
+        "fuelType": "Hybrid",
+        "length": 176,
+        "width": 76,
+        "height": 47,
+        "weight": 3878
+      }
+    },
+    {
+      "Id": 19,
+      "brand": "Toyota",
+      "model": "GR Supra 3.0",
+      "year": 2024,
+      "price": 58000,
+      "imageUrl": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80",
+      "description": "The Toyota GR Supra 3.0 brings back the legendary Supra nameplate with modern performance credentials. Developed in partnership with BMW, this sports car combines Japanese tuning culture heritage with cutting-edge BMW powertrains for pure driving excitement.",
+      "specs": {
+        "category": "Sports Car",
+        "horsepower": 382,
+        "acceleration": 3.9,
+        "mpg": 25,
+        "seating": 2,
+        "engineType": "3.0L I6 Turbo",
+        "transmission": "8-Speed Automatic",
+        "fuelType": "Gasoline",
+        "length": 172,
+        "width": 73,
+        "height": 51,
+        "weight": 3397
+      }
+    },
+    {
+      "Id": 20,
+      "brand": "Mazda",
+      "model": "RX-7 Spirit R",
+      "year": 2024,
+      "price": 85000,
+      "imageUrl": "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=800&q=80",
+      "description": "The Mazda RX-7 Spirit R represents the final evolution of rotary engine perfection. This lightweight sports car delivers an unmatched power-to-weight ratio and pure driving dynamics that have made it a legend among automotive enthusiasts worldwide.",
+      "specs": {
+        "category": "Rotary Sports Car",
+        "horsepower": 280,
+        "acceleration": 4.9,
+        "mpg": 18,
+        "seating": 2,
+        "engineType": "1.3L Twin-Rotor",
+        "transmission": "5-Speed Manual",
+        "fuelType": "Gasoline",
+        "length": 166,
+        "width": 70,
+        "height": 48,
+        "weight": 2756
       }
     }
   ]
