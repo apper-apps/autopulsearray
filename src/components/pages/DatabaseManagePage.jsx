@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { populateDatabase, populateCars, populateChatRooms, populateNews } from '@/scripts/populateDatabase'
 import ApperIcon from '@/components/ApperIcon'
 import { toast } from 'react-toastify'
-
 const DatabaseManagePage = () => {
   const [isPopulating, setIsPopulating] = useState(false)
   const [populatingTable, setPopulatingTable] = useState(null)
