@@ -144,12 +144,12 @@ if (!response.success) {
 export const createChatRoom = async (roomData) => {
   try {
     const apperClient = getApperClient()
-    const params = {
+const params = {
       records: [{
         Name: roomData.Name,
         topic: roomData.topic,
-        participant_count: 1,
-        last_activity: new Date().toISOString()
+        participant_count: roomData.participant_count || 1,
+        last_activity: roomData.last_activity || new Date().toISOString()
       }]
     }
     

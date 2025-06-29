@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "populate-db": "node -r esm src/scripts/populateDatabase.js"
+"populate-db": "echo 'Run populateDatabase() in browser console after loading the app'"
   },
 "dependencies": {
     "@reduxjs/toolkit": "2.7.0",

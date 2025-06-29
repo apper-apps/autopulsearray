@@ -1,8 +1,9 @@
+// Browser-compatible imports
 import { createCar } from "@/services/api/carService";
 import { createChatRoom } from "@/services/api/chatService";
 import { createNews } from "@/services/api/newsService";
 
-// Enhanced car data with 20 records
+// Enhanced car data with 20 records (Tags field removed to match API expectations)
 const carsData = [
   {
     Name: "Mercedes-AMG GT 63 S",
@@ -23,8 +24,7 @@ const carsData = [
     length: 196,
     width: 76,
     height: 53,
-    weight: 4630,
-    Tags: "luxury,performance,AMG,mercedes"
+    weight: 4630
   },
   {
     Name: "BMW M8 Competition",
@@ -46,7 +46,6 @@ const carsData = [
     width: 75,
     height: 52,
     weight: 4595,
-    Tags: "BMW,M-Series,competition,performance"
   },
   {
     Name: "Audi RS e-tron GT",
@@ -68,7 +67,6 @@ const carsData = [
     width: 76,
     height: 53,
     weight: 5060,
-    Tags: "electric,audi,RS,quattro,sustainable"
   },
   {
     Name: "Porsche 911 Turbo S",
@@ -90,7 +88,6 @@ const carsData = [
     width: 74,
     height: 51,
     weight: 3640,
-    Tags: "porsche,911,turbo,iconic,sports"
   },
   {
     Name: "Ferrari F8 Tributo",
@@ -112,7 +109,6 @@ const carsData = [
     width: 76,
     height: 47,
     weight: 3164,
-    Tags: "ferrari,supercar,V8,italian,exotic"
   },
   {
     Name: "Lamborghini Huracán EVO",
@@ -134,7 +130,6 @@ const carsData = [
     width: 76,
     height: 45,
     weight: 3135,
-    Tags: "lamborghini,V10,italian,bull,raw"
   },
   {
     Name: "McLaren 720S",
@@ -156,7 +151,6 @@ const carsData = [
     width: 76,
     height: 47,
     weight: 3186,
-    Tags: "mclaren,british,carbon,monocell,precision"
   },
   {
     Name: "Bentley Continental GT",
@@ -178,7 +172,6 @@ const carsData = [
     width: 76,
     height: 54,
     weight: 4897,
-    Tags: "bentley,luxury,W12,handcrafted,grand-touring"
   },
   {
     Name: "Rolls-Royce Cullinan",
@@ -200,7 +193,6 @@ const carsData = [
     width: 84,
     height: 72,
     weight: 6069,
-    Tags: "rolls-royce,luxury,SUV,diamond,presence"
   },
   {
     Name: "Aston Martin DB12",
@@ -222,7 +214,6 @@ const carsData = [
     width: 76,
     height: 50,
     weight: 3957,
-    Tags: "aston-martin,DB,british,elegance,timeless"
   },
   {
     Name: "Bugatti Chiron",
@@ -244,7 +235,6 @@ const carsData = [
     width: 79,
     height: 47,
     weight: 4398,
-    Tags: "bugatti,hypercar,W16,exclusive,art"
   },
   {
     Name: "Koenigsegg Jesko",
@@ -266,7 +256,6 @@ const carsData = [
     width: 78,
     height: 47,
     weight: 3131,
-    Tags: "koenigsegg,swedish,fastest,revolutionary,boundaries"
   },
   {
     Name: "Pagani Huayra",
@@ -288,7 +277,6 @@ const carsData = [
     width: 80,
     height: 46,
     weight: 2976,
-    Tags: "pagani,art,handcrafted,sculpture,extraordinary"
   },
   {
     Name: "Tesla Model S Plaid",
@@ -310,7 +298,6 @@ const carsData = [
     width: 77,
     height: 56,
     weight: 4766,
-    Tags: "tesla,electric,plaid,autonomous,future"
   },
   {
     Name: "Lexus LC 500",
@@ -332,7 +319,6 @@ const carsData = [
     width: 75,
     height: 53,
     weight: 4280,
-    Tags: "lexus,japanese,precision,V8,emotion"
   },
   {
     Name: "Chevrolet Corvette Z06",
@@ -354,7 +340,6 @@ const carsData = [
     width: 77,
     height: 48,
     weight: 3434,
-    Tags: "corvette,american,Z06,track,value"
   },
   {
     Name: "Nissan GT-R NISMO",
@@ -376,7 +361,6 @@ const carsData = [
     width: 74,
     height: 54,
     weight: 3865,
-    Tags: "nissan,GT-R,godzilla,AWD,monster"
   },
   {
     Name: "Honda NSX Type S",
@@ -398,7 +382,6 @@ const carsData = [
     width: 76,
     height: 47,
     weight: 3878,
-    Tags: "honda,NSX,hybrid,precision,reliable"
   },
   {
     Name: "Toyota GR Supra 3.0",
@@ -420,7 +403,6 @@ const carsData = [
     width: 73,
     height: 51,
     weight: 3397,
-    Tags: "toyota,supra,legendary,tuning,excitement"
   },
   {
     Name: "Mazda RX-7 Spirit R",
@@ -442,7 +424,6 @@ const carsData = [
     width: 70,
     height: 48,
     weight: 2756,
-    Tags: "mazda,rotary,lightweight,legend,pure"
   }
 ];
 
@@ -599,15 +580,16 @@ async function populateCars() {
         console.log(`✓ Successfully created: ${car.Name}`);
       } else {
         failureCount++;
-        console.log(`✗ Failed to create: ${car.Name}`);
+        console.log(`✗ Failed to create: ${car.Name} - No result returned`);
       }
       
       // Small delay to avoid overwhelming the API
-      await new Promise(resolve => setTimeout(resolve, 200));
+      await new Promise(resolve => setTimeout(resolve, 300));
       
     } catch (error) {
       failureCount++;
-      console.error(`✗ Error creating car ${carsData[i].Name}:`, error.message);
+      console.error(`✗ Error creating car ${carsData[i].Name}:`, error.message || error);
+      console.error(`Full error details:`, error);
     }
   }
   
@@ -632,15 +614,16 @@ async function populateChatRooms() {
         console.log(`✓ Successfully created: ${room.Name}`);
       } else {
         failureCount++;
-        console.log(`✗ Failed to create: ${room.Name}`);
+        console.log(`✗ Failed to create: ${room.Name} - No result returned`);
       }
       
       // Small delay to avoid overwhelming the API
-      await new Promise(resolve => setTimeout(resolve, 200));
+      await new Promise(resolve => setTimeout(resolve, 300));
       
     } catch (error) {
       failureCount++;
-      console.error(`✗ Error creating chat room ${chatRoomsData[i].Name}:`, error.message);
+      console.error(`✗ Error creating chat room ${chatRoomsData[i].Name}:`, error.message || error);
+      console.error(`Full error details:`, error);
     }
   }
   
@@ -665,15 +648,16 @@ async function populateNews() {
         console.log(`✓ Successfully created: ${article.title}`);
       } else {
         failureCount++;
-        console.log(`✗ Failed to create: ${article.title}`);
+        console.log(`✗ Failed to create: ${article.title} - No result returned`);
       }
       
       // Small delay to avoid overwhelming the API
-      await new Promise(resolve => setTimeout(resolve, 200));
+      await new Promise(resolve => setTimeout(resolve, 300));
       
     } catch (error) {
       failureCount++;
-      console.error(`✗ Error creating news article ${newsData[i].title}:`, error.message);
+      console.error(`✗ Error creating news article ${newsData[i].title}:`, error.message || error);
+      console.error(`Full error details:`, error);
     }
   }
   
@@ -747,3 +731,9 @@ export { populateCars, populateChatRooms, populateNews };
 
 // Note: Auto-run functionality removed for browser compatibility
 // To run this script, call populateDatabase() manually from your application
+
+// Browser execution helper - can be called from console
+if (typeof window !== 'undefined') {
+  window.populateDatabase = populateDatabase;
+  console.log('Database population script loaded. Call populateDatabase() to start population.');
+}

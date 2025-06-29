@@ -113,7 +113,8 @@ export const createCar = async (carData) => {
         length: carData.length,
         width: carData.width,
         height: carData.height,
-        weight: carData.weight
+weight: carData.weight,
+        Tags: carData.Tags || ""
       }]
     }
     
@@ -165,8 +166,9 @@ export const updateCar = async (id, carData) => {
         fuel_type: carData.fuel_type,
         length: carData.length,
         width: carData.width,
-        height: carData.height,
-        weight: carData.weight
+height: carData.height,
+        weight: carData.weight,
+        Tags: carData.Tags || ""
       }]
     }
     
