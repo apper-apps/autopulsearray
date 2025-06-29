@@ -22,9 +22,9 @@ export const getChatRooms = async () => {
     
     const response = await apperClient.fetchRecords('chat_room', params)
     
-    if (!response.success) {
-      console.error(response.message)
-      throw new Error(response.message)
+if (!response.success) {
+      console.error(response.message || 'Failed to fetch chat rooms')
+      throw new Error(response.message || 'Failed to fetch chat rooms')
     }
     
     return response.data || []
@@ -91,8 +91,8 @@ export const getRoomMessages = async (roomId) => {
     const response = await apperClient.fetchRecords('message', params)
     
     if (!response.success) {
-      console.error(response.message)
-      throw new Error(response.message)
+console.error(response.message || 'Failed to fetch room messages')
+      throw new Error(response.message || 'Failed to fetch room messages')
     }
     
     return response.data || []
@@ -118,9 +118,9 @@ export const sendMessage = async (roomId, content) => {
     
     const response = await apperClient.createRecord('message', params)
     
-    if (!response.success) {
-      console.error(response.message)
-      throw new Error(response.message)
+if (!response.success) {
+      console.error(response.message || 'Failed to send message')
+      throw new Error(response.message || 'Failed to send message')
     }
     
     if (response.results) {
@@ -155,9 +155,9 @@ export const createChatRoom = async (roomData) => {
     
     const response = await apperClient.createRecord('chat_room', params)
     
-    if (!response.success) {
-      console.error(response.message)
-      throw new Error(response.message)
+if (!response.success) {
+      console.error(response.message || 'Failed to create chat room')
+      throw new Error(response.message || 'Failed to create chat room')
     }
     
     if (response.results) {
