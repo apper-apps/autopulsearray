@@ -19,10 +19,11 @@ export const getChatRooms = async () => {
       pagingInfo: { limit: 100, offset: 0 }
     }
     
-    const response = await apperClient.fetchRecords("chat_room", params)
+const response = await apperClient.fetchRecords("chat_room", params)
     
-    if (!response.success) {
-      throw new Error(response.message)
+    if (!response || !response.success) {
+      console.error('API Error:', response?.message || 'No response received - check SDK availability and network connectivity')
+      throw new Error(response?.message || 'Failed to fetch chat rooms - please check database connectivity and ensure ApperSDK is properly loaded')
     }
     
     if (!response.data || response.data.length === 0) {
@@ -54,10 +55,11 @@ export const getChatRoomById = async (id) => {
       ]
     }
     
-    const response = await apperClient.getRecordById("chat_room", id, params)
+const response = await apperClient.getRecordById("chat_room", id, params)
     
-    if (!response.success) {
-      throw new Error(response.message)
+    if (!response || !response.success) {
+      console.error('API Error:', response?.message || 'No response received - check SDK availability and network connectivity')
+      return null
     }
     
     if (!response.data) {
@@ -68,8 +70,8 @@ export const getChatRoomById = async (id) => {
       Id: response.data.Id,
       name: response.data.Name,
       topic: response.data.topic,
-      participantCount: response.data.participant_count,
-      lastActivity: response.data.last_activity
+      participant_count: response.data.participant_count,
+      last_activity: response.data.last_activity
     }
   } catch (error) {
     console.error(`Error fetching chat room with ID ${id}:`, error)
@@ -106,11 +108,11 @@ export const getRoomMessages = async (roomId) => {
       pagingInfo: { limit: 1000, offset: 0 }
     }
     
-    const response = await apperClient.fetchRecords('message', params)
+const response = await apperClient.fetchRecords('message', params)
     
-if (!response.success) {
-      console.error(response.message || 'Failed to fetch room messages')
-      throw new Error(response.message || 'Failed to fetch room messages')
+    if (!response || !response.success) {
+      console.error('API Error:', response?.message || 'No response received - check SDK availability and network connectivity')
+      throw new Error(response?.message || 'Failed to fetch room messages - please check database connectivity and ensure ApperSDK is properly loaded')
     }
     
     return response.data || []
@@ -134,10 +136,11 @@ export const sendMessage = async (roomId, content) => {
       }]
     }
     
-    const response = await apperClient.createRecord('message', params)
-if (!response.success) {
-      console.error(response.message || 'Failed to send message')
-      throw new Error(response.message || 'Failed to send message')
+const response = await apperClient.createRecord('message', params)
+    
+    if (!response || !response.success) {
+      console.error('API Error:', response?.message || 'No response received - check SDK availability and network connectivity')
+      throw new Error(response?.message || 'Failed to send message - please check database connectivity and ensure ApperSDK is properly loaded')
     }
     
     if (response.results) {
@@ -170,10 +173,11 @@ const apperClient = getApperClient()
       }]
     }
     
-    const response = await apperClient.createRecord('chat_room', params)
-if (!response.success) {
-      console.error(response.message || 'Failed to create chat room')
-      throw new Error(response.message || 'Failed to create chat room')
+const response = await apperClient.createRecord('chat_room', params)
+    
+    if (!response || !response.success) {
+      console.error('API Error:', response?.message || 'No response received - check SDK availability and network connectivity')
+      throw new Error(response?.message || 'Failed to create chat room - please check database connectivity and ensure ApperSDK is properly loaded')
     }
     
     if (response.results) {

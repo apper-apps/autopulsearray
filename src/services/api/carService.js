@@ -35,11 +35,11 @@ export const getCars = async () => {
       pagingInfo: { limit: 100, offset: 0 }
     }
     
-    const response = await apperClient.fetchRecords('car', params)
+const response = await apperClient.fetchRecords('car', params)
     
-    if (!response.success) {
-console.error('API Error:', response?.message || 'Unknown error - response may be undefined')
-      throw new Error(response?.message || 'Failed to fetch cars - please check API connectivity')
+    if (!response || !response.success) {
+      console.error('API Error:', response?.message || 'No response received - check SDK availability and network connectivity')
+      throw new Error(response?.message || 'Failed to fetch cars - please check database connectivity and ensure ApperSDK is properly loaded')
     }
     
     return response.data || []
@@ -76,10 +76,10 @@ export const getCarById = async (id) => {
       ]
     }
     
-    const response = await apperClient.getRecordById('car', id, params)
+const response = await apperClient.getRecordById('car', id, params)
     
-if (!response || !response.success) {
-      console.error('API Error:', response?.message || 'Unknown error - response may be undefined')
+    if (!response || !response.success) {
+      console.error('API Error:', response?.message || 'No response received - check SDK availability and network connectivity')
       return null
     }
     
@@ -118,11 +118,11 @@ weight: carData.weight,
       }]
     }
     
-    const response = await apperClient.createRecord('car', params)
+const response = await apperClient.createRecord('car', params)
     
-if (!response || !response.success) {
-      console.error('API Error:', response?.message || 'Unknown error - response may be undefined')
-      throw new Error(response?.message || 'Failed to create car - please check API connectivity')
+    if (!response || !response.success) {
+      console.error('API Error:', response?.message || 'No response received - check SDK availability and network connectivity')
+      throw new Error(response?.message || 'Failed to create car - please check database connectivity and ensure ApperSDK is properly loaded')
     }
     
     if (response.results) {
@@ -172,11 +172,11 @@ height: carData.height,
       }]
     }
     
-    const response = await apperClient.updateRecord('car', params)
+const response = await apperClient.updateRecord('car', params)
     
-if (!response || !response.success) {
-      console.error('API Error:', response?.message || 'Unknown error - response may be undefined')
-      throw new Error(response?.message || 'Failed to update car - please check API connectivity')
+    if (!response || !response.success) {
+      console.error('API Error:', response?.message || 'No response received - check SDK availability and network connectivity')
+      throw new Error(response?.message || 'Failed to update car - please check database connectivity and ensure ApperSDK is properly loaded')
     }
     
     if (response.results) {
@@ -204,11 +204,11 @@ export const deleteCar = async (id) => {
       RecordIds: [id]
     }
     
-    const response = await apperClient.deleteRecord('car', params)
+const response = await apperClient.deleteRecord('car', params)
     
-if (!response || !response.success) {
-      console.error('API Error:', response?.message || 'Unknown error - response may be undefined')
-      throw new Error(response?.message || 'Failed to delete car - please check API connectivity')
+    if (!response || !response.success) {
+      console.error('API Error:', response?.message || 'No response received - check SDK availability and network connectivity')
+      throw new Error(response?.message || 'Failed to delete car - please check database connectivity and ensure ApperSDK is properly loaded')
     }
     
     if (response.results) {

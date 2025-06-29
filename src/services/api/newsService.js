@@ -31,11 +31,11 @@ export const getNews = async () => {
       pagingInfo: { limit: 100, offset: 0 }
     }
     
-    const response = await apperClient.fetchRecords('news_article', params)
+const response = await apperClient.fetchRecords('news_article', params)
     
-    if (!response.success) {
-      console.error(response.message)
-      throw new Error(response.message)
+    if (!response || !response.success) {
+      console.error('API Error:', response?.message || 'No response received - check SDK availability and network connectivity')
+      throw new Error(response?.message || 'Failed to fetch news - please check database connectivity and ensure ApperSDK is properly loaded')
     }
     
     return response.data || []
@@ -62,10 +62,10 @@ export const getNewsById = async (id) => {
       ]
     }
     
-    const response = await apperClient.getRecordById('news_article', id, params)
+const response = await apperClient.getRecordById('news_article', id, params)
     
-    if (!response.success) {
-      console.error(response.message)
+    if (!response || !response.success) {
+      console.error('API Error:', response?.message || 'No response received - check SDK availability and network connectivity')
       return null
     }
     
@@ -93,11 +93,11 @@ export const createNews = async (newsData) => {
       }]
     }
     
-    const response = await apperClient.createRecord('news_article', params)
+const response = await apperClient.createRecord('news_article', params)
     
-    if (!response.success) {
-      console.error(response.message)
-      throw new Error(response.message)
+    if (!response || !response.success) {
+      console.error('API Error:', response?.message || 'No response received - check SDK availability and network connectivity')
+      throw new Error(response?.message || 'Failed to create news article - please check database connectivity and ensure ApperSDK is properly loaded')
     }
     
     if (response.results) {
