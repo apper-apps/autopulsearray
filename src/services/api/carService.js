@@ -38,8 +38,8 @@ export const getCars = async () => {
     const response = await apperClient.fetchRecords('car', params)
     
     if (!response.success) {
-      console.error(response.message)
-      throw new Error(response.message)
+console.error('API Error:', response?.message || 'Unknown error - response may be undefined')
+      throw new Error(response?.message || 'Failed to fetch cars - please check API connectivity')
     }
     
     return response.data || []
@@ -78,8 +78,8 @@ export const getCarById = async (id) => {
     
     const response = await apperClient.getRecordById('car', id, params)
     
-    if (!response.success) {
-      console.error(response.message)
+if (!response || !response.success) {
+      console.error('API Error:', response?.message || 'Unknown error - response may be undefined')
       return null
     }
     
@@ -119,9 +119,9 @@ export const createCar = async (carData) => {
     
     const response = await apperClient.createRecord('car', params)
     
-    if (!response.success) {
-      console.error(response.message)
-      throw new Error(response.message)
+if (!response || !response.success) {
+      console.error('API Error:', response?.message || 'Unknown error - response may be undefined')
+      throw new Error(response?.message || 'Failed to create car - please check API connectivity')
     }
     
     if (response.results) {
@@ -172,9 +172,9 @@ export const updateCar = async (id, carData) => {
     
     const response = await apperClient.updateRecord('car', params)
     
-    if (!response.success) {
-      console.error(response.message)
-      throw new Error(response.message)
+if (!response || !response.success) {
+      console.error('API Error:', response?.message || 'Unknown error - response may be undefined')
+      throw new Error(response?.message || 'Failed to update car - please check API connectivity')
     }
     
     if (response.results) {
@@ -204,9 +204,9 @@ export const deleteCar = async (id) => {
     
     const response = await apperClient.deleteRecord('car', params)
     
-    if (!response.success) {
-      console.error(response.message)
-      throw new Error(response.message)
+if (!response || !response.success) {
+      console.error('API Error:', response?.message || 'Unknown error - response may be undefined')
+      throw new Error(response?.message || 'Failed to delete car - please check API connectivity')
     }
     
     if (response.results) {
