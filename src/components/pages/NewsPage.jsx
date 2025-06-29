@@ -178,9 +178,8 @@ const NewsPage = () => {
                         {formatDistanceToNow(new Date(article.published_at), { addSuffix: true })}
                       </span>
                     </div>
+</div>
                   </div>
-                  </div>
-                </div>
               </motion.article>
             ))}
           </motion.div>
