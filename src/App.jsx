@@ -16,6 +16,7 @@ import Callback from '@/components/pages/Callback'
 import ErrorPage from '@/components/pages/ErrorPage'
 import ResetPassword from '@/components/pages/ResetPassword'
 import PromptPassword from '@/components/pages/PromptPassword'
+import DatabaseManagePage from '@/components/pages/DatabaseManagePage'
 
 export const AuthContext = createContext(null)
 
@@ -128,9 +129,10 @@ function AppContent() {
             <Route path="/" element={<HomePage />} />
             <Route path="/car/:id" element={<CarDetailPage />} />
             <Route path="/chat" element={<ChatRoomsPage />} />
-            <Route path="/chat/:roomId" element={<ChatRoomPage />} />
+<Route path="/chat/:roomId" element={<ChatRoomPage />} />
             <Route path="/compare" element={<ComparePage />} />
             <Route path="/news" element={<NewsPage />} />
+            <Route path="/admin/database" element={<DatabaseManagePage />} />
           </Routes>
         </Layout>
         
