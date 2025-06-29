@@ -83,15 +83,15 @@ const ComparePage = () => {
     }).format(price)
   }
 
-  const getSpecValue = (car, spec) => {
+const getSpecValue = (car, spec) => {
     switch(spec) {
-      case 'horsepower': return `${car.specs?.horsepower || '400'} HP`
-      case 'acceleration': return `${car.specs?.acceleration || '4.2'}s`
-      case 'mpg': return `${car.specs?.mpg || '25'} mpg`
-      case 'seating': return `${car.specs?.seating || '4'} seats`
-      case 'engineType': return car.specs?.engineType || 'V8 Turbocharged'
-      case 'transmission': return car.specs?.transmission || '8-Speed Auto'
-      case 'fuelType': return car.specs?.fuelType || 'Gasoline'
+      case 'horsepower': return `${car.horsepower || '400'} HP`
+      case 'acceleration': return `${car.acceleration || '4.2'}s`
+      case 'mpg': return `${car.mpg || '25'} mpg`
+      case 'seating': return `${car.seating || '4'} seats`
+      case 'engineType': return car.engine_type || 'V8 Turbocharged'
+      case 'transmission': return car.transmission || '8-Speed Auto'
+      case 'fuelType': return car.fuel_type || 'Gasoline'
       default: return 'N/A'
     }
   }
@@ -169,8 +169,8 @@ const ComparePage = () => {
                       className="flex items-center justify-between p-4 bg-dark-800 rounded-lg border border-dark-600 hover:border-primary-500/50 transition-colors"
                     >
                       <div className="flex items-center space-x-3">
-                        <img
-                          src={car.imageUrl}
+<img
+                          src={car.image_url}
                           alt={`${car.brand} ${car.model}`}
                           className="w-12 h-8 object-cover rounded"
                         />
@@ -224,12 +224,12 @@ const ComparePage = () => {
                     <th className="text-left p-6 text-gray-400 font-medium w-48">Specification</th>
                     {compareList.map((car) => (
                       <th key={car.Id} className="text-center p-6 min-w-64">
-                        <div className="space-y-3">
-                          <img
-                            src={car.imageUrl}
+<img
+                            src={car.image_url}
                             alt={`${car.brand} ${car.model}`}
                             className="w-full h-32 object-cover rounded-lg"
                           />
+                          <div>
                           <div>
                             <h3 className="font-bold text-white text-lg">
                               {car.brand} {car.model}

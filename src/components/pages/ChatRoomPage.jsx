@@ -112,9 +112,9 @@ const ChatRoomPage = () => {
           
           <div className="flex items-center space-x-4 text-sm text-gray-400">
             <div className="flex items-center space-x-1">
-              <ApperIcon name="Users" size={16} />
-              <span>{room.participantCount} online</span>
+<span>{room.participant_count} online</span>
             </div>
+            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
             <span>Live</span>
           </div>

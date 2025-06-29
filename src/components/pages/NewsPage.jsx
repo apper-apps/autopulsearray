@@ -1,13 +1,12 @@
-import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
-import { formatDistanceToNow } from 'date-fns'
-import ApperIcon from '@/components/ApperIcon'
-import Badge from '@/components/atoms/Badge'
-import Loading from '@/components/ui/Loading'
-import Error from '@/components/ui/Error'
-import Empty from '@/components/ui/Empty'
-import { getNews } from '@/services/api/newsService'
-
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { formatDistanceToNow } from "date-fns";
+import ApperIcon from "@/components/ApperIcon";
+import Badge from "@/components/atoms/Badge";
+import Error from "@/components/ui/Error";
+import Empty from "@/components/ui/Empty";
+import Loading from "@/components/ui/Loading";
+import { getNews } from "@/services/api/newsService";
 const NewsPage = () => {
   const [news, setNews] = useState([])
   const [loading, setLoading] = useState(true)
@@ -132,9 +131,9 @@ const NewsPage = () => {
                 className="bg-dark-900 rounded-xl border border-dark-700 overflow-hidden card-hover cursor-pointer"
               >
                 {/* Article Image */}
-                <div className="relative h-48 overflow-hidden">
+<div className="relative h-48 overflow-hidden">
                   <img
-                    src={article.imageUrl}
+                    src={article.image_url}
                     alt={article.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -147,9 +146,9 @@ const NewsPage = () => {
                   </div>
 
                   {/* Reading Time */}
-                  <div className="absolute top-4 right-4">
+<div className="absolute top-4 right-4">
                     <Badge variant="default" className="bg-black/50 backdrop-blur-sm">
-                      {article.readingTime} min read
+                      {article.reading_time} min read
                     </Badge>
                   </div>
                 </div>
@@ -175,11 +174,11 @@ const NewsPage = () => {
                     </div>
                     
                     <div className="flex items-center space-x-1">
-                      <ApperIcon name="Clock" size={12} />
-                      <span>
-                        {formatDistanceToNow(new Date(article.publishedAt), { addSuffix: true })}
+<span>
+                        {formatDistanceToNow(new Date(article.published_at), { addSuffix: true })}
                       </span>
                     </div>
+                  </div>
                   </div>
                 </div>
               </motion.article>

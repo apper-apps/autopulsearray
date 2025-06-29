@@ -119,8 +119,8 @@ const CarDetailPage = () => {
               className="relative"
             >
               <div className="aspect-video rounded-2xl overflow-hidden bg-dark-900 border border-dark-700">
-                <img
-                  src={car.imageUrl}
+<img
+                  src={car.image_url}
                   alt={`${car.brand} ${car.model}`}
                   className="w-full h-full object-cover"
                 />
@@ -148,8 +148,8 @@ const CarDetailPage = () => {
                 <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-2">
                   {car.brand} <span className="gradient-text">{car.model}</span>
                 </h1>
-                <p className="text-xl text-gray-400">
-                  {car.specs?.category || 'Premium Luxury Vehicle'}
+<p className="text-xl text-gray-400">
+                  {car.category || 'Premium Luxury Vehicle'}
                 </p>
               </div>
 
@@ -161,33 +161,33 @@ const CarDetailPage = () => {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="bg-dark-800 rounded-xl p-4 text-center border border-dark-700">
                   <ApperIcon name="Zap" size={24} className="text-primary-400 mx-auto mb-2" />
-                  <p className="text-sm text-gray-400">Power</p>
+<p className="text-sm text-gray-400">Power</p>
                   <p className="text-lg font-bold text-white">
-                    {car.specs?.horsepower || '400'} HP
+                    {car.horsepower || '400'} HP
                   </p>
                 </div>
                 
                 <div className="bg-dark-800 rounded-xl p-4 text-center border border-dark-700">
                   <ApperIcon name="Gauge" size={24} className="text-accent-400 mx-auto mb-2" />
-                  <p className="text-sm text-gray-400">0-60 mph</p>
+<p className="text-sm text-gray-400">0-60 mph</p>
                   <p className="text-lg font-bold text-white">
-                    {car.specs?.acceleration || '4.2'}s
+                    {car.acceleration || '4.2'}s
                   </p>
                 </div>
                 
                 <div className="bg-dark-800 rounded-xl p-4 text-center border border-dark-700">
                   <ApperIcon name="Fuel" size={24} className="text-green-400 mx-auto mb-2" />
-                  <p className="text-sm text-gray-400">Fuel Economy</p>
+<p className="text-sm text-gray-400">Fuel Economy</p>
                   <p className="text-lg font-bold text-white">
-                    {car.specs?.mpg || '25'} mpg
+                    {car.mpg || '25'} mpg
                   </p>
                 </div>
                 
                 <div className="bg-dark-800 rounded-xl p-4 text-center border border-dark-700">
                   <ApperIcon name="Users" size={24} className="text-purple-400 mx-auto mb-2" />
-                  <p className="text-sm text-gray-400">Seating</p>
+<p className="text-sm text-gray-400">Seating</p>
                   <p className="text-lg font-bold text-white">
-                    {car.specs?.seating || '4'} seats
+                    {car.seating || '4'} seats
                   </p>
                 </div>
               </div>
@@ -260,20 +260,20 @@ const CarDetailPage = () => {
                   <h3 className="text-xl font-bold text-white mb-4">Engine & Performance</h3>
                   <div className="space-y-3">
                     <div className="flex justify-between">
-                      <span className="text-gray-400">Engine Type</span>
-                      <span className="text-white">{car.specs?.engineType || 'V8 Turbocharged'}</span>
+<span className="text-gray-400">Engine Type</span>
+                      <span className="text-white">{car.engine_type || 'V8 Turbocharged'}</span>
                     </div>
-                    <div className="flex justify-between">
+<div className="flex justify-between">
                       <span className="text-gray-400">Horsepower</span>
-                      <span className="text-white">{car.specs?.horsepower || '400'} HP</span>
+                      <span className="text-white">{car.horsepower || '400'} HP</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-400">Torque</span>
                       <span className="text-white">{car.specs?.torque || '500'} lb-ft</span>
                     </div>
-                    <div className="flex justify-between">
+<div className="flex justify-between">
                       <span className="text-gray-400">Transmission</span>
-                      <span className="text-white">{car.specs?.transmission || '8-Speed Automatic'}</span>
+                      <span className="text-white">{car.transmission || '8-Speed Automatic'}</span>
                     </div>
                   </div>
                 </div>
@@ -281,21 +281,21 @@ const CarDetailPage = () => {
                 <div className="space-y-4">
                   <h3 className="text-xl font-bold text-white mb-4">Dimensions & Weight</h3>
                   <div className="space-y-3">
-                    <div className="flex justify-between">
+<div className="flex justify-between">
                       <span className="text-gray-400">Length</span>
-                      <span className="text-white">{car.specs?.length || '185'}" in</span>
+                      <span className="text-white">{car.length || '185'}" in</span>
                     </div>
-                    <div className="flex justify-between">
+<div className="flex justify-between">
                       <span className="text-gray-400">Width</span>
-                      <span className="text-white">{car.specs?.width || '73'}" in</span>
+                      <span className="text-white">{car.width || '73'}" in</span>
                     </div>
-                    <div className="flex justify-between">
+<div className="flex justify-between">
                       <span className="text-gray-400">Height</span>
-                      <span className="text-white">{car.specs?.height || '56'}" in</span>
+                      <span className="text-white">{car.height || '56'}" in</span>
                     </div>
-                    <div className="flex justify-between">
+<div className="flex justify-between">
                       <span className="text-gray-400">Curb Weight</span>
-                      <span className="text-white">{car.specs?.weight || '4,200'} lbs</span>
+                      <span className="text-white">{car.weight || '4,200'} lbs</span>
                     </div>
                   </div>
                 </div>
